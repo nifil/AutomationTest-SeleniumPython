@@ -1,6 +1,6 @@
 import unittest
 from unittest.suite import TestSuite
-import register, login
+import register, login, addcart ,checkout
 
 if __name__ == "__main__":
 
@@ -13,6 +13,8 @@ if __name__ == "__main__":
     # add test to suite
     suite.addTest(tests.loadTestsFromModule(register))
     suite.addTest(tests.loadTestsFromModule(login))
+    suite.addTest(tests.loadTestsFromModule(addcart))
+    suite.addTest(tests.loadTestsFromModule(checkout))
 
     # run the test suite
     runner = unittest.TextTestRunner()
